@@ -488,6 +488,26 @@ export default async function seedDemoData({ container }: ExecArgs) {
           name: "Bundles",
           is_active: true,
         },
+        {
+          name: "Wall Bars & Ladders",
+          is_active: true,
+        },
+        {
+          name: "Activity Towers",
+          is_active: true,
+        },
+        {
+          name: "Pikler & Climbing",
+          is_active: true,
+        },
+        {
+          name: "Electric Boards",
+          is_active: true,
+        },
+        {
+          name: "Training Equipment",
+          is_active: true,
+        },
       ],
     },
   });
@@ -939,6 +959,769 @@ export default async function seedDemoData({ container }: ExecArgs) {
                 },
                 {
                   amount: 259,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        // --- Movemate (Canada) ---
+        {
+          title: "Movemate™ Active Standing Board",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Standing Boards")!.id,
+          ],
+          description:
+            "Award-winning active standing board from Canada. Patent-pending flexible platform with independently moving slats that trace natural dynamic movements. Built from premium Baltic Birch Plywood with military-grade bungee cord configuration. Eco-friendly commercial-grade coating. Supports up to 181kg. Handcrafted in Canada. 30-day happiness promise.",
+          handle: "movemate-active-standing-board",
+          weight: 5500,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Standard"],
+            },
+          ],
+          variants: [
+            {
+              title: "Standard",
+              sku: "MOVEMATE-STD",
+              options: {
+                Variant: "Standard",
+              },
+              prices: [
+                {
+                  amount: 29999,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 329,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 359,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        // --- Bloon Toys (India) ---
+        {
+          title: "Bloon Curvy Board 2.0 — Cork-Lined Balance Board",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Balance Equipment")!.id,
+          ],
+          description:
+            "A Waldorf-inspired curved wooden balance board with premium cork lining for floor protection and enhanced grip. Rock, wobble, slide, and stretch — perfect for open-ended play and movement exploration. Made from multi-layer birch plywood. Designed in India by Bloon Toys for ages 1.5+. Works on the foundational 'sense of balance'.",
+          handle: "bloon-curvy-board-cork",
+          weight: 3000,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatshirt-vintage-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Cork-Lined", "Light Indigo"],
+            },
+          ],
+          variants: [
+            {
+              title: "Cork-Lined",
+              sku: "BLOON-CURVY-CORK",
+              options: {
+                Variant: "Cork-Lined",
+              },
+              prices: [
+                {
+                  amount: 4550,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 52,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 55,
+                  currency_code: "usd",
+                },
+              ],
+            },
+            {
+              title: "Light Indigo",
+              sku: "BLOON-CURVY-INDIGO",
+              options: {
+                Variant: "Light Indigo",
+              },
+              prices: [
+                {
+                  amount: 4550,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 52,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 55,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        {
+          title: "Bloon Original Curvy Board — Wooden Balance Board",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Balance Equipment")!.id,
+          ],
+          description:
+            "The original Waldorf-style wooden balance board by Bloon Toys. A minimalist curved board without cork — pure birch plywood for rocking, stretching, and imaginative play. Lightweight and versatile for all ages. Made in India.",
+          handle: "bloon-original-curvy-board",
+          weight: 2500,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatshirt-vintage-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Natural"],
+            },
+          ],
+          variants: [
+            {
+              title: "Natural",
+              sku: "BLOON-CURVY-OG",
+              options: {
+                Variant: "Natural",
+              },
+              prices: [
+                {
+                  amount: 3900,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 45,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 49,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        {
+          title: "Bloon Zen Blocks — Balancing Blocks",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Balance Equipment")!.id,
+          ],
+          description:
+            "Handcrafted wooden balancing blocks for mindful play and focus. Stack, balance, and create — a meditative toy for all ages. Made from solid wood with smooth, rounded edges. Designed by Bloon Toys, India.",
+          handle: "bloon-zen-blocks",
+          weight: 500,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatpants-gray-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Standard"],
+            },
+          ],
+          variants: [
+            {
+              title: "Standard",
+              sku: "BLOON-ZEN",
+              options: {
+                Variant: "Standard",
+              },
+              prices: [
+                {
+                  amount: 1250,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 15,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 16,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        {
+          title: "Bloon Pikler MAX — Transformable Jungle Gym",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Pikler & Climbing")!.id,
+          ],
+          description:
+            "A transformable Pikler triangle that converts into multiple configurations for climbing, hanging, and creative play. Sturdy birch plywood construction rated for daily use. Foldable for storage. Compatible with slide, rope ladder, disc swing, and trapeze bar attachments. Made in India by Bloon Toys. Ages 6m+.",
+          handle: "bloon-pikler-max",
+          weight: 12000,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Standard"],
+            },
+          ],
+          variants: [
+            {
+              title: "Standard",
+              sku: "BLOON-PIKLER-MAX",
+              options: {
+                Variant: "Standard",
+              },
+              prices: [
+                {
+                  amount: 21950,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 249,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 269,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        {
+          title: "Bloon Pikler MINI — Starter Pikler Triangle",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Pikler & Climbing")!.id,
+          ],
+          description:
+            "The perfect first climbing triangle for toddlers. Compact, safe, and beautifully made from birch plywood. Encourages motor skill development through self-directed climbing. Foldable for easy storage. Made in India by Bloon Toys. Ages 6m–4y.",
+          handle: "bloon-pikler-mini",
+          weight: 7000,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-white-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Standard"],
+            },
+          ],
+          variants: [
+            {
+              title: "Standard",
+              sku: "BLOON-PIKLER-MINI",
+              options: {
+                Variant: "Standard",
+              },
+              prices: [
+                {
+                  amount: 10450,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 119,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 129,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        {
+          title: "Bloon Pikler Slide — Reversible Rock Climbing Face",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Pikler & Climbing")!.id,
+          ],
+          description:
+            "Dual-purpose slide attachment for Bloon Pikler MINI or MAX. One side is a smooth wooden slide, the other features rock climbing holds. Adds versatility and challenge to your Pikler setup. Made in India by Bloon Toys.",
+          handle: "bloon-pikler-slide",
+          weight: 5000,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/shorts-vintage-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Standard"],
+            },
+          ],
+          variants: [
+            {
+              title: "Standard",
+              sku: "BLOON-SLIDE",
+              options: {
+                Variant: "Standard",
+              },
+              prices: [
+                {
+                  amount: 6750,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 79,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 85,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        // --- Calineo (India) ---
+        {
+          title: "Calineo Swedish Ladder — Wall-Mounted Home Gym",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Wall Bars & Ladders")!
+              .id,
+          ],
+          description:
+            "Professional-grade wall-mounted Swedish ladder for full-body strength training, stretching, and flexibility. Calisthenics-inspired design built for Indian homes. 120kg capacity. Suitable for ages 1–100. Designed by calisthenics coaches. Made in India by Calineo.",
+          handle: "calineo-swedish-ladder",
+          weight: 25000,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Standard"],
+            },
+          ],
+          variants: [
+            {
+              title: "Standard",
+              sku: "CALINEO-LADDER",
+              options: {
+                Variant: "Standard",
+              },
+              prices: [
+                {
+                  amount: 26000,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 299,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 319,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        {
+          title: "Calineo Aero Playtower — Indoor Activity Station",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Activity Towers")!.id,
+          ],
+          description:
+            "Indoor activity station with toddler-safe design for climbing, swinging, and active play. Compact footprint designed for Indian apartments. Encourages motor skills and spatial awareness. Made in India by Calineo.",
+          handle: "calineo-aero-playtower",
+          weight: 20000,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-white-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Standard"],
+            },
+          ],
+          variants: [
+            {
+              title: "Standard",
+              sku: "CALINEO-AERO",
+              options: {
+                Variant: "Standard",
+              },
+              prices: [
+                {
+                  amount: 29000,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 329,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 355,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        {
+          title: "Calineo Titan Tower — Professional Calisthenics Station",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Activity Towers")!.id,
+          ],
+          description:
+            "Heavy-duty adjustable-height calisthenics training tower. 120kg weight capacity. Designed for serious training — pull-ups, dips, muscle-ups, and bodyweight exercises. Professional-grade construction for homes, gyms, and academies. Made in India by Calineo.",
+          handle: "calineo-titan-tower",
+          weight: 30000,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Standard"],
+            },
+          ],
+          variants: [
+            {
+              title: "Standard",
+              sku: "CALINEO-TITAN",
+              options: {
+                Variant: "Standard",
+              },
+              prices: [
+                {
+                  amount: 35000,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 399,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 429,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        {
+          title: "Calineo Balancing Beam",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Balance Equipment")!.id,
+          ],
+          description:
+            "Montessori-inspired wooden balancing beam for coordination, early childhood fitness, and motor skills training. Safe rounded edges and non-slip surface. Perfect for homes, schools, and therapy centres. Made in India by Calineo.",
+          handle: "calineo-balancing-beam",
+          weight: 2000,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatpants-gray-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Standard"],
+            },
+          ],
+          variants: [
+            {
+              title: "Standard",
+              sku: "CALINEO-BEAM",
+              options: {
+                Variant: "Standard",
+              },
+              prices: [
+                {
+                  amount: 3500,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 39,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 42,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        {
+          title: "Calineo Calisthenics Rings",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Training Equipment")!.id,
+          ],
+          description:
+            "Premium gymnastic rings for upper body strength training. Easy home installation with adjustable straps. Suitable for kids and adults. Build grip strength, core stability, and shoulder mobility. Made in India by Calineo.",
+          handle: "calineo-gymnastic-rings",
+          weight: 1500,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/shorts-vintage-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Standard"],
+            },
+          ],
+          variants: [
+            {
+              title: "Standard",
+              sku: "CALINEO-RINGS",
+              options: {
+                Variant: "Standard",
+              },
+              prices: [
+                {
+                  amount: 2800,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 32,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 35,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        // --- Nalamoves (Switzerland) ---
+        {
+          title: "Nalamoves Nala Bars Combo — Premium Wall Bars",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Wall Bars & Ladders")!
+              .id,
+          ],
+          description:
+            "Premium Finnish birch wall bars combo from Switzerland. Full-body home workout system for pull-ups, stretching, mobility, and bodyweight training. Beautiful minimalist design that fits any living space. Includes Nalamoves app with guided workouts. 306+ 5-star reviews. Ships worldwide from Europe.",
+          handle: "nalamoves-nala-bars-combo",
+          weight: 30000,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-white-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Wood",
+              values: ["Natural", "Dark Walnut"],
+            },
+          ],
+          variants: [
+            {
+              title: "Natural",
+              sku: "NALA-COMBO-NAT",
+              options: {
+                Wood: "Natural",
+              },
+              prices: [
+                {
+                  amount: 52000,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 519,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 564,
+                  currency_code: "usd",
+                },
+              ],
+            },
+            {
+              title: "Dark Walnut",
+              sku: "NALA-COMBO-WALNUT",
+              options: {
+                Wood: "Dark Walnut",
+              },
+              prices: [
+                {
+                  amount: 55000,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 549,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 595,
+                  currency_code: "usd",
+                },
+              ],
+            },
+          ],
+          sales_channels: [
+            {
+              id: defaultSalesChannel[0].id,
+            },
+          ],
+        },
+        // --- Ungoverned (Australia) ---
+        {
+          title: "Ungoverned Vendetta UV-4.2 — All-Terrain Electric Board",
+          category_ids: [
+            categoryResult.find((cat) => cat.name === "Electric Boards")!.id,
+          ],
+          description:
+            "The world's only dual-track electric board engineered for terrain that defeats wheels. Dual independent front & rear track drive with independent traction control. Swappable Samsung lithium-ion battery with ~21km range. Top speed 42km/h. IP67-rated motors and remote with LCD display. Built in limited production runs in Australia by Ungoverned. For off-road use only.",
+          handle: "ungoverned-vendetta",
+          weight: 25000,
+          status: ProductStatus.PUBLISHED,
+          shipping_profile_id: shippingProfile.id,
+          images: [
+            {
+              url: "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png",
+            },
+          ],
+          options: [
+            {
+              title: "Variant",
+              values: ["Tactical"],
+            },
+          ],
+          variants: [
+            {
+              title: "Tactical",
+              sku: "UNGOV-VENDETTA",
+              options: {
+                Variant: "Tactical",
+              },
+              prices: [
+                {
+                  amount: 299999,
+                  currency_code: "inr",
+                },
+                {
+                  amount: 3449,
+                  currency_code: "eur",
+                },
+                {
+                  amount: 3699,
                   currency_code: "usd",
                 },
               ],
