@@ -431,7 +431,7 @@ export default async function seedDemoData({ container }: ExecArgs) {
   let publishableApiKey: ApiKey | null = null;
   const { data } = await query.graph({
     entity: "api_key",
-    fields: ["id"],
+    fields: ["id", "token"],
     filters: {
       type: "publishable",
     },
@@ -463,6 +463,26 @@ export default async function seedDemoData({ container }: ExecArgs) {
       add: [defaultSalesChannel[0].id],
     },
   });
+
+  const token = (publishableApiKey as any).token;
+  if (token) {
+    const fs = require("fs");
+    const path = require("path");
+    const storefrontEnvPath = path.resolve(
+      __dirname,
+      "../../../moveboard-storefront/.env.local"
+    );
+    if (fs.existsSync(storefrontEnvPath)) {
+      let envContent = fs.readFileSync(storefrontEnvPath, "utf-8");
+      envContent = envContent.replace(
+        /NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY=.*/,
+        `NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY=${token}`
+      );
+      fs.writeFileSync(storefrontEnvPath, envContent);
+      logger.info(`Auto-updated storefront .env.local with publishable key.`);
+    }
+    logger.info(`Publishable API Key: ${token}`);
+  }
   logger.info("Finished seeding publishable API key data.");
 
   logger.info("Seeding product data...");
